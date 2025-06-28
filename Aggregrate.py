@@ -61,7 +61,8 @@ def aggregate_weekly_features():
             'sentiment_compound': ['mean', 'max', 'min', 'std'],
             'rhetoric_score': ['mean', 'max', 'sum'],
             'certainty_score': ['mean', 'sum'],
-            'headline': ['count'] 
+            'headline': ['count'],
+            'relevance_score': ['mean', 'max', 'min', 'std'],
         }
 
         weekly_df = df.groupby('week_before_event').agg(aggregations).reset_index()
