@@ -2,3 +2,4 @@
 .env
 /raw_data
 /processed_data
+/features
