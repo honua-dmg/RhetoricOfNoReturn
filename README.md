@@ -3,7 +3,7 @@
 This project analyzes news articles leading up to major geopolitical events to determine if the rhetoric and sentiment in the media can predict whether an event will escalate into a conflict. It uses natural language processing (NLP) and machine learning to model and predict outcomes based on textual data.
 
 ## Project Overview
-
+REPORT: https://docs.google.com/document/d/1qsqmNexrNksXaQsTToHuV5RZs6_jWBOoZHS0S30vvH4/edit?usp=sharing
 The core of this project is to analyze the language used in news coverage in the weeks before a significant event. By quantifying metrics like sentiment, rhetoric, and certainty, we can build a model that predicts whether a given situation will result in a conflict or de-escalation.
 
 ## Features
