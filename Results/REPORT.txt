@@ -1,0 +1,3 @@
+https://docs.google.com/document/d/1qsqmNexrNksXaQsTToHuV5RZs6_jWBOoZHS0S30vvH4/edit?usp=sharing
+
+this document summarises the results of the project, including analysis of data, model training, and some final thoughts.
