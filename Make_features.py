@@ -44,7 +44,7 @@ def create_all_features():
         if len(df) > ARTICLE_CAP:
             print(f"     Event has {len(df)} articles. Capping to {ARTICLE_CAP} via random sample.")
             df = df.sample(n=ARTICLE_CAP, random_state=RANDOM_STATE)
-        # -------------------------
+        
 
         df['text_to_analyze'] = df['headline'].fillna('') + ' ' + df['snippet'].fillna('')
 

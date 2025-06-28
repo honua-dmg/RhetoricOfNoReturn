@@ -43,27 +43,48 @@ The core of this project is to analyze the language used in news coverage in the
    pip install -r requirements.txt
    ```
 
+4. **Set up your API Key:**
+   This project uses The Guardian's API to collect news articles.
+   - Get a free developer API key from [The Guardian Open Platform](https://open-platform.theguardian.com/access/).
+   - Create a file named `.env` in the root directory of the project.
+   - Add your API key to the `.env` file like this:
+     ```
+     GUARDIAN_API_KEY='your-api-key-here'
+     ```
+
 ## Usage
 
-The project is divided into several scripts that should be run in the following order:
+To replicate the findings, run the scripts from your terminal in the following order:
 
-1. **`DataCollection.py`**: Collects raw data for the events specified in `events.csv`.
-2. **`ProcessData.py`**: Cleans and processes the raw data.
-3. **`Aggregrate.py`**: Aggregates the processed data into weekly features for each event.
-4. **`work.ipynb`**: A Jupyter Notebook for analysis, model training, and visualization.
+1.  **`DataCollection.py`**: Collects raw news articles.
+    ```bash
+    python DataCollection.py
+    ```
+2.  **`Make_features.py`**: Processes raw data and creates features.
+    ```bash
+    python Make_features.py
+    ```
+3.  **`Aggregrate.py`**: Aggregates features into weekly data.
+    ```bash
+    python Aggregrate.py
+    ```
+4.  **`Model.py`**: Trains the model and generates results.
+    ```bash
+    python Model.py
+    ```
+
+The `work.ipynb` notebook is also available for a more interactive exploration of the data and models.
 
 ## Project Structure
 
 - **`DataCollection.py`**: Script to collect raw news articles.
-- **`ProcessData.py`**: Script for cleaning and preprocessing text data.
+- **`Make_features.py`**: Script for feature engineering from raw text.
 - **`Aggregrate.py`**: Script to aggregate features on a weekly basis.
+- **`Model.py`**: Script for training the model and evaluating performance.
 - **`work.ipynb`**: Jupyter Notebook for analysis, modeling, and visualization.
 - **`events.csv`**: The main file containing the list of events to analyze.
 - **`final_model_data.csv`**: The final dataset used for model training.
-- **`/raw_data`**: Directory containing the raw, unprocessed data.
-- **`/processed_data`**: Directory for cleaned and preprocessed data.
-- **`/features`**: Directory containing the engineered features for each event.
-- **`/initial_visuals`**: Directory for storing visualizations and plots.
+
 
 ## Results
 
@@ -73,4 +94,4 @@ The project generates several visualizations to help understand the model's perf
 - **Classification Report**: Provides precision, recall, and F1-score for the model.
 - **Feature Importance**: Shows which features are most influential in predicting outcomes.
 
-These visualizations can be found in the root directory of the project.
+These visualizations can be found in the visuals directory of the project.
