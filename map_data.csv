@@ -1,0 +1,16 @@
+latitude,longitude,location_name,Outcome
+48.3,31.1,Ukraine Invasion (2022),Conflict
+31.5,34.4,Gaza Conflict (2023),Conflict
+26.3,17.2,Libyan Civil War (2011),Conflict
+15.5,48.5,Yemen Intervention (2015),Conflict
+35.0,38.0,Syrian Civil War (2011),Conflict
+48.0,37.8,Donbas War (2014),Conflict
+45.3,34.3,Crimea Annexation (2014),Conflict
+38.7,127.5,Korean Peninsula Crisis (2017),No Conflict
+32.4,53.6,Iran-US Crisis (2020),No Conflict
+48.3,31.1,Ukraine Buildup (2021),No Conflict
+34.1,78.7,India-China Standoff (2020),No Conflict
+36.8,36.6,Turkey-Russia Jet Crisis (2015),No Conflict
+34.0,74.4,India-Pakistan Crisis (2019),No Conflict
+15.1,117.8,Scarborough Shoal Standoff (2012),No Conflict
+34.0,74.4,Kashmir Crisis (2025),No Conflict
